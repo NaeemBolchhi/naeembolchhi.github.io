@@ -40,8 +40,10 @@ a:hover {color: #c33;}
 - - - - - - - - - - - - - -->
 <script>
 var disqus_config = function () {
+function getUrlVars() {var vars = {};var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {vars[key] = value;});return vars;}
+var zURL = getUrlVars().z;
 this.page.url = window.location.href;
-this.page.identifier = window.location.href;
+this.page.identifier = zURL;
 };
 (function() {
 var d = document, s = d.createElement('script');
