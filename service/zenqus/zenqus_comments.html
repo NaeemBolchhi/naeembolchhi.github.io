@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<!--  - - - - - - - - - - - -
+:: META INFO
+- - - - - - - - - - - - - -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111" />
+<!--  - - - - - - - - - - - -
+:: STYLESHEET
+- - - - - - - - - - - - - -->
+<style>
+body, html, div {margin: 0;width: 100%;height: 100%;overflow: hidden;}
+</style>
+<!--  - - - - - - - - - - - -
+:: PAGE INFO
+- - - - - - - - - - - - - -->
+<title>Zenqus Comments Page for Iframe</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<!--  - - - - - - - - - - - -
+:: LINK PARSER
+- - - - - - - - - - - - - -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zenqus">
+<meta property="og:title" content="Zenqus: Universal Disqus Comments">
+<meta property="og:description" content="Uncensored Disqus comments everywhere!">
+<meta property="og:locale" content="en_US">
+</head>
+
+<body style="overflow-y: scroll;">
+<!--  - - - - - - - - - - - -
+:: ZENQUS DISQUS
+- - - - - - - - - - - - - -->
+<div id="disqus_thread"></div>
+<!--  - - - - - - - - - - - -
+:: SCRIPTS
+- - - - - - - - - - - - - -->
+<script>
+var disqus_config = function () {
+this.page.url = https://www.google.com;
+this.page.identifier = 51452;
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://zenqus.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
