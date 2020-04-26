@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "dfcc16e012a7775e85a040dcc6064a9c"
+        "md5": "6031a84cac8ac5b5b00bbb5006e64eb7"
     },
     {
         "path": "assets",
@@ -32,7 +32,7 @@
     {
         "path": "/assets/css/style.css",
         "type": "file",
-        "md5": "cc87cb8806c844f0646558fe70d5c5d1"
+        "md5": "2fa825a4f33de3ba376cc61ec0e0be00"
     },
     {
         "path": "assets/js",
@@ -112,7 +112,7 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "f90ea0817edaaa8bf3a365500c6a35cf"
+        "md5": "16a7025a3f1d652aa9f3ae339d6b90b9"
     },
     {
         "path": "feed.xml",
@@ -122,7 +122,7 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "a9b2f4bc987c39a9443d4af8cbda2d32"
+        "md5": "92802598e92abb381962234a3a018e58"
     },
     {
         "path": "media",
@@ -140,9 +140,84 @@
         "md5": false
     },
     {
+        "path": "/media/website/bg2.png",
+        "type": "file",
+        "md5": "0964e609fd195ae46c700d4838c8f13b"
+    },
+    {
+        "path": "/media/website/blog-logo.png",
+        "type": "file",
+        "md5": "6a8d3f16eb2f77500db8834b24f8ffc3"
+    },
+    {
+        "path": "media/website/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/responsive/bg2-2xl.png",
+        "type": "file",
+        "md5": "c4f4f068f03985a5d8f33ca7f0ecd7ec"
+    },
+    {
+        "path": "/media/website/responsive/bg2-lg.png",
+        "type": "file",
+        "md5": "39822117af8ecee7458ec910fe045c5a"
+    },
+    {
+        "path": "/media/website/responsive/bg2-md.png",
+        "type": "file",
+        "md5": "f663267c6ff9342f3089c93096690ee4"
+    },
+    {
+        "path": "/media/website/responsive/bg2-sm.png",
+        "type": "file",
+        "md5": "6351a79992380d7dc2188008f330efbb"
+    },
+    {
+        "path": "/media/website/responsive/bg2-xl.png",
+        "type": "file",
+        "md5": "82f36d679c3e05247a0e48ce4084f6b7"
+    },
+    {
+        "path": "/media/website/responsive/bg2-xs.png",
+        "type": "file",
+        "md5": "d491c0f8657f2873f627b18ff38b5928"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-2xl.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-lg.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-md.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-sm.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-xl.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
+        "path": "/media/website/responsive/blog-logo-xs.png",
+        "type": "file",
+        "md5": "bc1965e0e00f1ace826f199d2bd8c2c2"
+    },
+    {
         "path": "search.html",
         "type": "file",
-        "md5": "05b517d626593df9808c1f4b789cdc13"
+        "md5": "bb61383e5c6d112c607a5be5c0bcd050"
     },
     {
         "path": "sitemap.xml",
