@@ -19,3 +19,11 @@
 		transform: none !important;
 		opacity: 1 !important;
 	}
+
+/* Expandable */
+	#expandable {
+		display: inline-block !important;
+	}
+	#expand, #expanded {
+		display: none !important;
+	}
