@@ -1062,6 +1062,9 @@
 	.visible {
 		display: inline-block !important;
 	}
+	.visible2 {
+		display: block !important;
+	}
 	.invisible {
 		display: none !important;
 	}
