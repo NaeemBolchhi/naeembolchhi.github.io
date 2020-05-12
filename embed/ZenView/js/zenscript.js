@@ -1,4 +1,4 @@
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 // SCRAPE URL FOR LINKS
 function getUrlVars() {
     var vars = {};
