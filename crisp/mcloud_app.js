@@ -293,7 +293,7 @@ function file_video(path){
 		playBtn += `
 		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end" class="mdui-ripple">MX Player</a></li>
 		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end" class="mdui-ripple">MX Player Pro</a></li>
-		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=org.videolan.vlc;S.title=${path};end" class="mdui-ripple">VLC</a></li>
+		<!-- <li class="mdui-menu-item"><a href="intent:${url}#Intent;package=org.videolan.vlc;S.title=${path};end" class="mdui-ripple">VLC</a></li> -->
 		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=video.player.videoplayer;S.title=${path};end" class="mdui-ripple">XPlayer</a></li>`;
 	}else{
 		playBtn += `
