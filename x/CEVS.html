@@ -10,7 +10,7 @@
 <body>
 <i class="content"><span onclick="load();">This is a demonstration of <a href="https://greasyfork.org/en/scripts/439879-copy-video-source-link" target="_blank">Copy Embedded Video Source</a>. Click this text to see video.</span>
 </i>
-<script>var videoStuff = `video controls><source src="https://tlgur.com/d/4yqmJ224" type="video/mp4">Your browser does not support the video tag.</video>`;
+<script>var videoStuff = `<video controls><source src="https://tlgur.com/d/4yqmJ224" type="video/mp4">Your browser does not support the video tag.</video>`;
 
 function load() {
     document.querySelector('i.content').innerHTML = videoStuff;
