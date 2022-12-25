@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html style="height:100%;width:100%;">
+<head>
+    <title>Versioning</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="A simple version number generator based on date.">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPISURBVFiF7ZRdTJtVGMd/z9sPUmhti2QB1g6EYQYoRDYyEC4mWUzMqBoTWbzYTNQrDSFLjB+BmUxhc4mZXrg7NGqMiYuJiRCNunXKQnEMmIAkbkPL5CPKBAdDCi19j1coLZQWUtSL/a/e8zzPOf/fOe95DtzWfyxZK9jYVuPR4JBC3Ijyo9Pa/LDXu5GFLxUXvxBY0p8L68ppELlpNmmtFUNDr8YFaGqreQtoiI4rONri8TYnYu4rLDw/sxDel55qwmkxYTQIiyHFkq7O3Pt9/8GYAI1tNR6BzwRR5bm1w27nLrt/qn+m75evCgClhOqWWq9vPfPukuJnp26FTu9wWHBYTKvyunDA3dnz+fJYi6I5DFCeWztclFVZkGnL21add7Bgmz23FxBBHY63++BiuN5hMa1pDqDp6smIcVR+O4DbucueZnKSanaQYkwl05Y/B4ASdzyAsCLdYTHGLhBxxQYQRgD8vw/MGDTz3+HhyR4bgIKf4wEYRX4zadH7Winlj6iPyOm0IjzRN/plwdjsld4s2865a5OXbPPBmTIgrOnau/EAUsza6wuh8IcWk2GtDlO6Jq0rA6u7oP2Boyg5FpULgzQ0e86djgcAMHhfyRvpFvMRIk9YidCU3dlzfF0AgMb2mvtd4cDxEJJtQB/5FeuLrz1y9nIi5suaqNhdNnRn7skUPZQTMKRMFE9ff9nl6+5KeIHFdzIH50/tUMH3sjo2YrxSjpMXL/DSOWU7cXEwVk3M62rO/9MH8/cgqnOzAO68TJ8LqpXgG9oowFoqPjNp1UKBtRs8SkozWhVL+wA0HX+surgAf4TtaRlvfvNppiujAgKZyhxvxrKWlj/mBPXxpgHap6sOzM3O5yVqu0I6MKAU9QN1uZs/AQARLYjiGcXSt1rIeCuROVaTttBV5w7Eq4sLYEAPWZ22R3+oy/kiEeONar03E4BS67XeG/UlW2IOMR6i8Yo9VYaM0POExaU0RtSU4UT2d719/wrAeFX5Kyh1LCqsIzRs7+x5e0sBxivK96OprwFS9z90NaVsb+p8V8fC4gXvTkAXXZUn+yQiL6GmngZI8zx21fKg527Nmoa9tJTpkZ/6l0avlyqDPAUkFSD6EuYAmHfvdWh3WBGnHUlLxVRYdBNAFHcl03wVgIiMAYSGBmYx//PkBS/3WgB0YTTZABG/QNfDH4hoj8998lF+8MqP3eaiouBCh9cQvjFZCSiU9n6yAVZ1wUTlnlNKOBIdV9Dk8vW0bDkAwFhlWa0ghxBxI+JX6K2uzt7zyTa/rf+F/gIQikQluCA8ygAAAABJRU5ErkJggg==">
+</head>
+<body style="margin:0;padding:0;height:100%;width:100%;font-size:18px;display:flex;align-items:center;justify-content:center;background:#1c1c1c;color:#efefef;">
+    <version style="font-size:5rem;cursor:pointer;" onclick="copyMe(this)"></version>
+    <noscript>This website cannot work without JavaScript. Please enable JavaScript and refresh the page.</noscript>
+    <script type="text/javascript">
+        let version = document.getElementsByTagName("version")[0],
+            date = new Date(),
+            ver = date.getFullYear().toString() + date.getMonth().toString().padStart(2,0) + date.getDate().toString().padStart(2,0) + date.getHours().toString().padStart(2,0) + date.getMinutes().toString().padStart(2,0) + date.getSeconds().toString().padStart(2,0);
+
+        version.innerHTML = ver;
+
+        function copyMe() {
+            navigator.clipboard.writeText(ver);
+        }
+    </script>
+</body>
+</html>
