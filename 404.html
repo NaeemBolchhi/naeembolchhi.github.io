@@ -11,11 +11,17 @@
             }
         ];
 
+        // Default redirection link
+        let relink = window.location.origin;
+
         for (let x = 0; x < re.length; x++) {
-            if (pn.match === '/' + re[x].m || pn.match === '/' + re[x].m + '/') {
-                window.location.assign(re[x].r);
+            if (pn === '/' + re[x].m || pn === '/' + re[x].m + '/') {
+                relink = re[x].r;
             }
         }
+
+        // Redirects to homepage if no matches are found
+        window.location.assign(relink);
     </script>
 </head>
 <body>
