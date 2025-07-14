@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Re:NaeemBolchhi</title>
+    <script>
+        const pn = window.location.pathname;
+        const re = [
+            {
+                "m":"obecalc",
+                "r":"https://naeembolchhi.github.io/OBEcalc/"
+            }
+        ];
+
+        for (let x = 0; x < re.length; x++) {
+            if (pn.match === '/' + re[x].m || pn.match === '/' + re[x].m + '/') {
+                window.location.assign(re[x].r);
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
