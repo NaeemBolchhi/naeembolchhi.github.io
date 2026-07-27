@@ -1,128 +1,485 @@
-<!DOCTYPE HTML>
-<!--
-    Identity by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="theme-color" content="#111111" />
-        <meta name="author" content="NaeemBolchhi" />
-        <meta name="description" content="NaeemBolchhi's Landing Page." />
-        <meta name="keywords" content="NaeemBolchhi" />
-        <title>NaeemBolchhi</title>
-        <link href="images/NaeemBolchhi.ico" rel="shortcut icon" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- LINK PARSER -->
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="NaeemBolchhi">
-        <meta property="og:title" content="NaeemBolchhi">
-        <meta property="og:description" content="Tech Enthusiast, Font Freak, Pancosmic Loner.">
-        <meta property="og:url" content="https://naeembolchhi.github.io/index.html">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:image" content="https://naeembolchhi.github.io/images/preview.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@naeembolchhi — lecturer, hobbyist coder</title>
+<style>
+  :root{
+    --bg: #0a0c09;
+    --bg-raise: #12150f;
+    --panel: #10130d;
+    --line: #262b1f;
+    --text: #d7d4c4;
+    --text-dim: #7d8270;
+    --muted: #565b4c;
+    --amber: #e8a33d;
+    --amber-dim: #8a6a2c;
+    --cyan: #6fb8b0;
+    --green: #8fae5f;
+    --violet: #a390c9;
+    --red: #c96a5a;
+    --mono-display: "IBM Plex Mono", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+    --mono-body: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
 
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+  *{ box-sizing: border-box; }
 
-        <!-- Wrapper -->
-            <div id="wrapper">
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
 
-                <!-- Main -->
-                    <section id="main">
-                        <header>
-                            <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-                            <h1>NaeemBolchhi</h1>
-                            <p>Tech Enthusiast</p>
-                        </header>
-                        <!--
-                        <hr />
-                        <h2>Extra Stuff!</h2>
-                        <form method="post" action="#">
-                            <div class="fields">
-                                <div class="field">
-                                    <input type="text" name="name" id="name" placeholder="Name" />
-                                </div>
-                                <div class="field">
-                                    <input type="email" name="email" id="email" placeholder="Email" />
-                                </div>
-                                <div class="field">
-                                    <select name="department" id="department">
-                                        <option value="">Department</option>
-                                        <option value="sales">Sales</option>
-                                        <option value="tech">Tech Support</option>
-                                        <option value="null">/dev/null</option>
-                                    </select>
-                                </div>
-                                <div class="field">
-                                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-                                </div>
-                                <div class="field">
-                                    <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-                                </div>
-                                <div class="field">
-                                    <label>But are you a robot?</label>
-                                    <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-                                    <input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-                                </div>
-                            </div>
-                            <ul class="actions special">
-                                <li><a href="#" class="button">Get Started</a></li>
-                            </ul>
-                        </form>
-                        <hr />
-                        -->
-                        <footer>
-                            <ul class="icons">
-                                <li><a href="https://github.com/naeembolchhi" class="icon" target="_blank"><i class="ff ff-github" aria-hidden="true"></i></a></li>
-                                <li><a href="https://t.me/NaeemBolchhi" class="icon" target="_blank"><i class="ff ff-telegram" aria-hidden="true"></i></a></li>
-                                <li><a href="/blog/" class="icon" target="_blank"><i class="ff ff-pen" aria-hidden="true"></i></a></li>
-								<li id="expand" class="visible"><a href="javascript:void(0)" class="icon" onclick="expandable()"><i class="ff ff-expand" aria-hidden="true"></i></a></li>
-								<li id="expanded" class="invisible"><a href="javascript:void(0)" class="icon active" onclick="expandable()"><i class="ff ff-expand" aria-hidden="true"></i></a></li>
-								
-								<span id="expandable" class="invisible">
-									<li><a href="https://greasyfork.org/en/users/437111" class="icon" target="_blank"><i class="ff ff-greasyfork" aria-hidden="true"></i></a></li>
-									<li><a href="https://font-freak.github.io/" class="icon" target="_blank"><i class="ff ff-fontfreak" aria-hidden="true"></i></a></li>
-								</span>
-                            </ul>
-                        </footer>
-                    </section>
+  html, body{
+    margin:0; padding:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono-body);
+    font-size: 15px;
+    line-height: 1.6;
+  }
 
-                <!-- Footer -->
-                    <footer id="footer">
-                        <ul class="copyright">
-                            <li>&copy; NaeemBolchhi</li>
-                            <li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
-                        </ul>
-                    </footer>
+  ::selection{ background: var(--amber-dim); color: #0a0c09; }
 
-            </div>
+  a{ color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan); }
+  a:hover{ color: var(--amber); border-color: var(--amber); }
+  a:focus-visible, button:focus-visible, input:focus-visible{
+    outline: 2px solid var(--amber);
+    outline-offset: 2px;
+  }
 
-        <!-- Scripts -->
-            <script>
-                if ('addEventListener' in window) {
-                    window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-                    document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-                }
-                
-                function expandable() {
-                    var x = document.getElementById("expand");
-                    var y = document.getElementById("expanded");
-					var z = document.getElementById("expandable");
-                    if (x.className === "invisible") {
-                        x.className = "visible";
-                        y.className = "invisible";
-						z.className = "invisible";
-                    } else {
-                        x.className = "invisible";
-                        y.className = "visible";
-						z.className = "visible2";
-                    }
-                }
-            </script>
+  /* ambient CRT texture */
+  .crt-overlay{
+    position: fixed; inset:0; pointer-events:none; z-index: 50;
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.018) 0px,
+        rgba(255,255,255,0.018) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+  }
+  .vignette{
+    position: fixed; inset:0; pointer-events:none; z-index: 49;
+    box-shadow: inset 0 0 180px 40px rgba(0,0,0,0.55);
+  }
 
-    </body>
+  .wrap{
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 48px 20px 120px;
+  }
+
+  .window{
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 30px 60px -20px rgba(0,0,0,0.6);
+    overflow: hidden;
+  }
+
+  .titlebar{
+    display:flex; align-items:center; gap:10px;
+    padding: 10px 14px;
+    background: var(--bg-raise);
+    border-bottom: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+  .dots{ display:flex; gap:6px; }
+  .dot{ width:10px; height:10px; border-radius:50%; }
+  .dot.r{ background:#4a2b28; }
+  .dot.y{ background:#4a3f22; }
+  .dot.g{ background:#28402a; }
+  .titlebar .path{ margin-left: 6px; letter-spacing: 0.02em; }
+  .titlebar .flag{ margin-left:auto; color: var(--muted); }
+
+  .screen{ padding: 28px 26px 30px; }
+
+  .prompt-line{
+    display:flex; flex-wrap: wrap; gap: 8px;
+    color: var(--text-dim);
+    margin: 0 0 4px;
+  }
+  .prompt-line .user{ color: var(--green); }
+  .prompt-line .at{ color: var(--muted); }
+  .prompt-line .host{ color: var(--cyan); }
+  .prompt-line .path{ color: var(--violet); }
+  .prompt-line .sym{ color: var(--muted); }
+  .prompt-line .cmd{ color: var(--text); }
+
+  section{ margin: 0 0 46px; }
+  section:last-of-type{ margin-bottom: 0; }
+
+  .out{ padding-left: 2px; }
+
+  h1{
+    font-family: var(--mono-display);
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 30px);
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin: 0 0 6px;
+  }
+  h1 .accent{ color: var(--amber); }
+
+  .tagline{
+    color: var(--text-dim);
+    margin: 0 0 18px;
+    max-width: 60ch;
+  }
+
+  .field{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 4px 14px;
+    font-size: 13.5px;
+    max-width: 560px;
+  }
+  .field dt{ color: var(--muted); }
+  .field dd{ margin:0; color: var(--text); }
+  .field dd .tag{ color: var(--cyan); }
+
+  .lede{
+    max-width: 66ch;
+    color: var(--text);
+  }
+  .lede strong{ color: var(--amber); font-weight: 600; }
+
+  .cursor-blink{
+    display:inline-block;
+    width: 8px; height: 1em;
+    background: var(--amber);
+    vertical-align: text-bottom;
+    margin-left: 3px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink{ 50%{ opacity: 0; } }
+
+  /* project listing styled like a colorized `ls -la` */
+  .listing{
+    display:flex; flex-direction: column;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .proj{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 4px 18px;
+    padding: 16px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .proj:last-child{ border-bottom: none; }
+  .proj:hover{ background: var(--bg-raise); }
+
+  .proj .name{
+    font-weight: 700;
+    color: var(--amber);
+    font-size: 14.5px;
+  }
+  .proj .perm{ color: var(--muted); font-size: 12px; }
+  .proj .meta{ color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .proj .meta .stars{ color: var(--green); }
+  .proj .meta .forks{ color: var(--cyan); }
+
+  .proj .desc{ color: var(--text); font-size: 13.5px; margin: 6px 0 8px; max-width: 56ch; }
+  .proj .stack{ display:flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .proj .stack span{
+    font-size: 11px;
+    padding: 2px 7px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--text-dim);
+    background: var(--bg-raise);
+  }
+  .proj .links a{ font-size: 12.5px; margin-right: 14px; }
+  .proj .note{
+    font-size: 12.5px;
+    color: var(--text-dim);
+    border-left: 2px solid var(--amber-dim);
+    padding-left: 10px;
+    margin-top: 8px;
+  }
+
+  .edu-quote{
+    border-left: 2px solid var(--cyan);
+    padding: 4px 0 4px 16px;
+    color: var(--text);
+    max-width: 62ch;
+  }
+
+  ul.plain{ list-style: none; padding:0; margin: 10px 0 0; }
+  ul.plain li{ padding-left: 18px; position: relative; margin-bottom: 8px; color: var(--text); max-width: 62ch; }
+  ul.plain li::before{ content: "›"; position:absolute; left:0; color: var(--amber); }
+
+  .contact-grid{
+    display:flex; flex-wrap: wrap; gap: 10px 28px;
+    font-size: 13.5px;
+  }
+  .contact-grid .k{ color: var(--muted); }
+
+  /* live prompt */
+  .live{
+    margin-top: 40px;
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+  }
+  .live-log{ min-height: 20px; margin-bottom: 6px; }
+  .live-log p{ margin: 2px 0; color: var(--text); }
+  .live-log .echo{ color: var(--text-dim); }
+  .live-log .sys{ color: var(--cyan); }
+  .live-form{
+    display:flex; align-items:center; gap: 8px;
+  }
+  .live-form .prefix{ color: var(--green); white-space:nowrap; font-size: 14px; }
+  .live-form input{
+    flex:1;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-family: var(--mono-body);
+    font-size: 14px;
+    caret-color: var(--amber);
+  }
+  .hint{ color: var(--muted); font-size: 12px; margin-top: 10px; }
+
+  footer{
+    text-align:center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 26px;
+  }
+
+  @media (max-width: 560px){
+    .field{ grid-template-columns: 1fr; }
+    .proj{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+<div class="vignette"></div>
+
+<div class="wrap">
+  <div class="window" role="region" aria-label="Terminal portfolio">
+    <div class="titlebar">
+      <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+      <span class="path">@naeembolchhi: ~/portfolio</span>
+      <span class="flag">zsh — 88x40</span>
+    </div>
+
+    <div class="screen">
+
+      <!-- whoami -->
+      <section id="whoami">
+        <p class="prompt-line">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">whoami</span>
+        </p>
+        <div class="out">
+          <h1>NaeemBolchhi<span class="accent">.</span></h1>
+          <p class="tagline">I lecture in English at a university. Code is the hobby that runs alongside it — small, sharp tools across Go, the web, and Android, usually built to fix something that annoyed me in a classroom or on my own desk.</p>
+          <dl class="field">
+            <dt>day job</dt><dd>university lecturer, English</dd>
+            <dt>hobby</dt><dd>independent developer</dd>
+            <dt>stack</dt><dd><span class="tag">Go</span> · <span class="tag">JS/TS</span> · <span class="tag">Android</span> · <span class="tag">Bash/PS</span></dd>
+            <dt>github</dt><dd><a href="https://github.com/NaeemBolchhi" target="_blank" rel="noopener">github.com/NaeemBolchhi</a></dd>
+            <dt>status</dt><dd>currently rebuilding a local file server, again, cleaner this time</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- cat interests -->
+      <section id="about">
+        <p class="prompt-line">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">cat interests.md</span>
+        </p>
+        <div class="out lede">
+          <p>By profession I teach English at a university. By habit I'm <strong>curious about how things work</strong> — and at some point that curiosity stopped staying in the classroom and started showing up as code: small scripts and pages built to fix something that annoyed me, then refused to leave me alone until it was fixed properly.</p>
+          <p>So the two sides feed each other. I notice the friction from the front of a classroom — cover pages, study notes, the software stack a student is handed on day one — and then, as a hobbyist, I go build the small tool that removes it. None of this is professional software development; it's a lecturer who likes to tinker.</p>
+        </div>
+      </section>
+
+      <!-- ls projects -->
+      <section id="projects">
+        <p class="prompt-line">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">ls -la ~/projects</span>
+        </p>
+        <div class="out">
+          <div class="listing">
+
+            <article class="proj">
+              <div class="name">pocket-library/</div>
+              <div>
+                <span class="perm">drwxr-xr-x</span>
+                <div class="meta"><span class="stars">★ 4</span> &nbsp;·&nbsp; userscript</div>
+                <p class="desc">A Violentmonkey/Tampermonkey userscript that pulls literature study material — articles, summaries, chapter analyses — from sites like CliffsNotes and LitCharts and turns them into clean, print-ready PDFs via Paged.js, right in the browser's own print dialogue.</p>
+                <div class="stack"><span>JavaScript</span><span>Paged.js</span><span>DOMParser</span><span>Userscript</span></div>
+                <p class="note">Started as scraping through iframes, rebuilt on fetch() + DOMParser once the CSS page-break rules needed real control. Built for students who'd rather read a formatted page than a cluttered website mid-essay.</p>
+                <div class="links">
+                  <a href="https://github.com/NaeemBolchhi/pocket-library" target="_blank" rel="noopener">source</a>
+                  <a href="https://naeembolchhi.github.io/pocket-library/" target="_blank" rel="noopener">install</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="name">acover/</div>
+              <div>
+                <span class="perm">drwxr-xr-x</span>
+                <div class="meta"><span class="stars">★ 11</span> &nbsp;·&nbsp; web app</div>
+                <p class="desc">A no-fuss cover page generator for school, college, and university assignments. Fill in the fields once, print or download a formatted PDF — works on desktop and, deliberately, on Android and iOS too, so a phone is enough.</p>
+                <div class="stack"><span>JavaScript</span><span>HTML/CSS</span><span>Vercel</span><span>GitHub Pages</span></div>
+                <p class="note">The whole premise: nobody should lose ten minutes of a submission deadline to fighting Word's margin settings.</p>
+                <div class="links">
+                  <a href="https://github.com/NaeemBolchhi/acover" target="_blank" rel="noopener">source</a>
+                  <a href="https://acover.vercel.app/" target="_blank" rel="noopener">live</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="name">colemak-camp/</div>
+              <div>
+                <span class="perm">drwxr-xr-x</span>
+                <div class="meta"><span class="stars">★ 18</span> <span class="forks">⑂ 7</span> &nbsp;·&nbsp; community fork</div>
+                <p class="desc">A ground-up overhaul of Colemak Club, the interactive site people use to learn the Colemak keyboard layout — a genuinely different way of touch-typing. Responsive down to phones, custom light/dark themes, a more accurate on-screen cheatsheet.</p>
+                <div class="stack"><span>SCSS</span><span>Vanilla JS</span><span>Local storage</span></div>
+                <p class="note">A layout is just a habit you can relearn — this is a small design contribution to the community project that teaches people how.</p>
+                <div class="links">
+                  <a href="https://github.com/ColemakCamp/colemakcamp.github.io" target="_blank" rel="noopener">source</a>
+                  <a href="https://colemakcamp.github.io/" target="_blank" rel="noopener">live</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="name">get-office-365/</div>
+              <div>
+                <span class="perm">drwxr-xr-x</span>
+                <div class="meta"><span class="stars">★ 29</span> <span class="forks">⑂ 5</span> &nbsp;·&nbsp; PowerShell</div>
+                <p class="desc">A preconfigured Office Deployment Tool config and a single PowerShell one-liner that installs Word, Excel, and PowerPoint on a Windows machine with no manual setup — completely free, as all edtech should be.</p>
+                <div class="stack"><span>PowerShell</span><span>XML config</span><span>ODT</span></div>
+				<p class="note">Piracy is a necessary evil when inaccessibility is weaponized to restrict education. This tool is literally meant for educational purposes.</p>
+                <div class="links">
+                  <a href="https://github.com/NaeemBolchhi/Get-Office-365" target="_blank" rel="noopener">source</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- education -->
+      <section id="education">
+        <p class="prompt-line">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">cat education.md</span>
+        </p>
+        <div class="out">
+          <blockquote class="edu-quote">
+            None of the projects above set out to be "edtech." They came out of actually standing in front of a classroom — a print tool for study notes, a cover page generator, a keyboard trainer, a way to get real software onto a student's laptop. Teaching gives me the friction points; coding, as a hobby, gives me an excuse to go fix the one in front of me instead of just complaining about it.
+          </blockquote>
+          <ul class="plain">
+            <li>I like tools that disappear — the best ones save a student five minutes and are never thought about again.</li>
+            <li>I default to scoping small and shipping, over planning something feature-complete that never leaves the repo. Coding is a hobby, not a second job.</li>
+            <li>Most of what I build starts as "this personally annoyed me in class," including everything above.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact">
+        <p class="prompt-line">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">contact --info</span>
+        </p>
+        <div class="out contact-grid">
+          <div><span class="k">github</span> &nbsp;<a href="https://github.com/NaeemBolchhi" target="_blank" rel="noopener">NaeemBolchhi</a></div>
+        </div>
+      </section>
+
+      <!-- live prompt -->
+      <div class="live">
+        <p class="prompt-line" style="margin-bottom:10px;">
+          <span class="user">@naeembolchhi</span><span class="sym">:~$</span>
+          <span class="cmd">type <span style="color:var(--amber)">help</span> to look around<span class="cursor-blink" aria-hidden="true"></span></span>
+        </p>
+        <div class="live-log" id="liveLog" aria-live="polite"></div>
+        <form class="live-form" id="liveForm">
+          <span class="prefix">$</span>
+          <input id="liveInput" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="help">
+        </form>
+        <p class="hint">try: help · whoami · about · projects · education · contact · clear</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>rendered locally, no tracking, no cookies you didn't ask for.</footer>
+</div>
+
+<script>
+(function(){
+  const log = document.getElementById('liveLog');
+  const form = document.getElementById('liveForm');
+  const input = document.getElementById('liveInput');
+
+  const jump = (id) => {
+    const el = document.getElementById(id);
+    if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+  };
+
+  const responses = {
+    help: () => `commands: whoami · about · projects · education · contact · clear`,
+    whoami: () => { jump('whoami'); return 'jumping to ~/whoami'; },
+    about: () => { jump('about'); return 'jumping to ~/interests.md'; },
+    projects: () => { jump('projects'); return 'jumping to ~/projects'; },
+    ls: () => { jump('projects'); return 'jumping to ~/projects'; },
+    education: () => { jump('education'); return 'jumping to ~/education.md'; },
+    contact: () => { jump('contact'); return 'jumping to ~/contact'; },
+    clear: () => { log.innerHTML = ''; return null; },
+    sudo: () => `nice try. permission denied.`,
+    'sl': () => `choo choo.`,
+    coffee: () => `brewing... ☕ (this terminal has no hardware access, sorry)`,
+  };
+
+  function run(raw){
+    const cmd = raw.trim().toLowerCase();
+    if(!cmd) return;
+
+    const echo = document.createElement('p');
+    echo.className = 'echo';
+    echo.textContent = '$ ' + raw;
+    log.appendChild(echo);
+
+    const handler = responses[cmd];
+    const out = handler ? handler() : `command not found: ${cmd} — try "help"`;
+
+    if(out){
+      const line = document.createElement('p');
+      line.className = 'sys';
+      line.textContent = out;
+      log.appendChild(line);
+    }
+    log.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    run(input.value);
+    input.value = '';
+  });
+})();
+</script>
+
+</body>
 </html>
